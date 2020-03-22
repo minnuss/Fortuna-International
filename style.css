@@ -1,0 +1,911 @@
+/************ DEFAULTS **********/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "sans-serif", "Verdana", "Arial";
+}
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+/************ Glavni Meni **********/
+
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 0.3% 0;
+    position: fixed;
+    background: #1E4D8C;
+    z-index: 9999;
+}
+
+.glavnimeni {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.glavnimeni li {
+    list-style: none;
+    margin: 5px;
+    width: max-content;
+    display: inline-block;
+    float: left;
+}
+
+.btn {
+    position: relative;
+    color: white;
+    font-size: 1.em;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #1E4D8C;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px;
+    transition: 1s all ease;
+}
+
+.btn::before {
+    background: #E8E8E8;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.btn1:hover {
+    color: #1E4D8C;
+}
+
+.btn1::before {
+    width: 0%;
+    height: 100%;
+}
+
+.btn1:hover::before {
+    width: 100%;
+}
+
+li.glavnimeni-desno {
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+
+ul.glavnimeni li.mobilnimeni {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.row::after {
+    clear: both;
+    display: table;
+    content: none;
+
+}
+
+/************* Styles **************/
+
+#sekcija1 {
+    background: #8e9eab;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #eef2f3, #8e9eab);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #eef2f3, #8e9eab);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+}
+
+.bernerlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 10px;
+    width: 25%;
+    margin-top: 2%;
+}
+
+.fortunauvod {
+    color: midnightblue;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 15px;
+    font-size: 1.3em;
+    position: relative;
+    text-align: justify;
+
+}
+
+.naslovuljaimasti {
+    font-size: 1.3em;
+    background: #1d4d8c;
+    color: white;
+    text-align: center;
+    width: 60%;
+    height: 30px;
+    padding: 5px;
+    margin: 20px auto 5px;
+
+}
+
+div.uljaimasti {
+    width: 100%;
+}
+
+div.uljaimasti div {
+    background: #EAEAED;
+    width: 60.5%;
+    display: block;
+    margin: 0 auto;
+}
+
+div.uljaimasti img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+div.uljaimasti p {
+    display: block;
+    position: relative;
+    width: 98%;
+    margin: 1% auto;
+    text-align: justify;
+    font-size: 1.1em;
+    color: #1d4d8c;
+
+}
+
+.uljaimasti a {
+    border-radius: 7px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    background: firebrick;
+    padding: 6px;
+    width: max-content;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uljaimasti a:hover {
+    background-color: #e8e8e8;
+    color: #1d4d8c;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.naslovalati {
+    font-size: 1.3em;
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    background: #1d4d8c;
+    color: white;
+    text-align: center;
+    width: 60%;
+    height: 30px;
+    padding: 5px;
+    margin: 20px auto 5px;
+}
+
+img.slikaalati {
+    display: inline-block;
+    margin: 0 auto;
+    width: 30.1%;
+    height: 30%;
+}
+
+#dveslikealati {
+    text-align: center;
+}
+
+#dveslikealatilink {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    background: firebrick;
+    color: white;
+    text-align: center;
+    width: 60%;
+    height: 30px;
+    padding: 5px;
+    margin: auto;
+}
+
+#dveslikealatilink .link1:hover {
+    -webkit-transition: all .5s ease-in-out;
+    color: midnightblue;
+}
+
+#dveslikealatilink .link1 {
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+    font-weight: bold;
+    width: max-content;
+}
+
+#dveslikealatilink .link2:hover {
+    -webkit-transition: all .5s ease-in-out;
+    color: midnightblue;
+}
+
+#dveslikealatilink .link2 {
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+    font-weight: bold;
+}
+
+.naslovsrafovskaroba {
+    font-size: 1.3em;
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    background: #1d4d8c;
+    color: white;
+    text-align: center;
+    width: 60%;
+    height: 30px;
+    padding: 5px;
+    margin: 20px auto 5px;
+}
+
+div.srafovskaroba {
+    background: #EAEAED;
+    width: 60.5%;
+    display: block;
+    margin: 0 auto;
+}
+
+.srafovskaroba img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+div.srafovskaroba div p {
+    color: #1d4d8c;
+    font-size: 1.1em;
+    width: 98%;
+    text-align: justify;
+    margin: 1%;
+}
+
+.srafovskaroba a:hover {
+    -webkit-transition: all .5s ease-in-out;
+    background-color: grey;
+    color: midnightblue;
+}
+
+.srafovskaroba a {
+    display: block;
+    border-radius: 7px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    background: firebrick;
+    padding: 6px;
+    text-decoration: none;
+    width: max-content;
+    margin: 0 auto 2%;
+    position: relative;
+    text-align: center;
+
+}
+
+h2.naslovnegaruku,
+h2.naslovlepila {
+    display: inline-block;
+    width: 29.3%;
+    height: 30%;
+}
+
+
+#naslovnegarukuilepila {
+    text-align: center;
+}
+
+.naslovnegaruku {
+    font-size: 1.3em;
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    background: #1d4d8c;
+    color: white;
+    text-align: center;
+    height: 30px;
+    padding: 5px;
+    display: block;
+}
+
+.naslovlepila {
+    font-size: 1.3em;
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    background: #1d4d8c;
+    color: white;
+    text-align: center;
+    height: 30px;
+    padding: 5px;
+    display: block;
+    margin-left: 10px;
+}
+
+img.negaruku {
+    display: inline-block;
+    width: 29.8%;
+    margin-bottom: -3px;
+}
+
+img.lepila {
+    display: inline-block;
+    width: 29.8%;
+    margin-left: 10px;
+    margin-bottom: -3px;
+}
+
+#negarukuilepila {
+    text-align: center;
+
+}
+
+p.negaruku {
+    font-size: 1.1em;
+    display: inline-block;
+    margin: 0 auto;
+    width: 49.7%;
+    color: #1d4d8c;
+    background: linear-gradient(to bottom, #EAEAED, #EAEAED);
+    background: -webkit-linear-gradient(to bottom, #EAEAED, #EAEAED);
+    position: relative;
+    right: 0.4%;
+    text-align: justify;
+}
+
+p.lepila {
+    font-size: 1.1em;
+    display: inline-block;
+    margin: 0 auto;
+    width: 49.7%;
+    color: #1d4d8c;
+    background: linear-gradient(to bottom, #EAEAED, #EAEAED);
+    background: -webkit-linear-gradient(to bottom, #EAEAED, #EAEAED);
+    position: relative;
+    left: 0.33%;
+    text-align: justify;
+
+}
+
+#paragrafnegarukuilepila {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#paragrafnegarukuilepila p.negaruku {
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #EAEAED, #EAEAED);
+    background: -webkit-linear-gradient(to bottom, #EAEAED, #EAEAED);
+    float: left;
+}
+
+#paragrafnegarukuilepila p.lepila {
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #EAEAED, #EAEAED);
+    background: -webkit-linear-gradient(to bottom, #EAEAED, #EAEAED);
+    float: right;
+}
+
+#paragrafnegarukuilepila a.linknegaruku {
+    display: block;
+    border-radius: 7px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background: firebrick;
+    padding: 6px;
+    text-decoration: none;
+    width: max-content;
+    margin: 3% auto 2%;
+    position: relative;
+}
+
+#paragrafnegarukuilepila a.linklepila {
+    display: block;
+    border-radius: 7px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background: firebrick;
+    padding: 6px;
+    text-decoration: none;
+    width: max-content;
+    margin: 1% auto 2%;
+}
+
+#paragrafnegarukuilepila a.linknegaruku:hover,
+#paragrafnegarukuilepila a.linklepila:hover {
+    -webkit-transition: all .5s ease-in-out;
+    background-color: grey;
+    color: midnightblue;
+}
+
+.naslovlampe {
+    font-size: 1.3em;
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    background: #1d4d8c;
+    color: white;
+    text-align: center;
+    width: 60%;
+    height: 30px;
+    padding: 5px;
+    margin: 0px auto 5px;
+}
+
+/*
+div.lampe {
+    height: 231px;
+}
+*/
+
+.lampe section img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.lampe section {
+    margin-left: auto;
+    margin-right: auto;
+    float: inline;
+    position: relative;
+    width: 60.5%;
+    height: auto;
+    background: linear-gradient(to right, #CFD0D4, #CFD0D4);
+    background: -webkit-linear-gradient(to right, #cfd0d4, #f9f9f9);
+}
+
+.lampe p {
+    margin: 1% 0.5%;
+    color: midnightblue;
+    font-size: 1.1em;
+    text-align: center;
+    text-align: justify;
+}
+
+#linklampe a.linklampe {
+    display: block;
+    border-radius: 7px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    background: firebrick;
+    padding: 6px;
+    text-decoration: none;
+    width: max-content;
+    margin: 0 auto 0;
+}
+
+#linklampe {
+    text-align: center;
+}
+
+#linklampe a:hover {
+    -webkit-transition: all .5s ease-in-out;
+    background-color: grey;
+    color: midnightblue;
+}
+
+hr.footerhr {
+
+    border: 20px solid #1d4d8c;
+    margin: 30px auto;
+    position: relative;
+    display: block;
+}
+
+#footerinfo {
+    background: white;
+    width: 60.5%;
+    display: block;
+    margin: 0 auto;
+}
+
+#footerinfo ul {
+    overflow: hidden;
+    margin: 0 auto 40px 3%;
+    padding: 0;
+}
+
+.footerinfo li {
+    list-style: none;
+    float: left;
+    width: 30%;
+    margin-right: 3%
+}
+
+.footerinfo li:before {
+    content: "\2714";
+    font-size: 2.2em;
+    color: firebrick;
+}
+
+hr.footerhr2 {
+    border: 5px solid #EAEAED;
+    margin: 10px auto;
+    position: relative;
+    display: block;
+}
+
+#endline {
+    width: 100%;
+    background-color: white;
+}
+
+#endline table {
+    width: 70%;
+    margin: 0 auto;
+    border: none;
+}
+
+#endline table p {
+    font-size: 0.7em;
+    text-align: center;
+}
+
+/*********************** Mobilna verzija **********************/
+
+
+@media (max-width: 800px) {
+    ul.glavnimeni li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    nav {
+        padding: 4px;
+    }
+
+    ul.glavnimeni li.mobilnimeni {
+        display: block;
+        float: right;
+        margin: 5px;
+    }
+
+    ul.glavnimeni.aktivacija li.mobilnimeni {
+        position: absolute;
+        top: 0;
+        width: max-content;
+        right: 0;
+    }
+
+    /*ul.glavnimeni.aktivacija {
+        position: relative;
+    }*/
+
+    ul.glavnimeni.aktivacija li {
+        display: block;
+        float: none;
+        margin: 0;
+    }
+
+    ul.glavnimeni.aktivacija li a {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 7px;
+        margin: 0 0 0 10px;
+
+    }
+
+    .bernerlogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55%;
+        margin: 2% auto 2%;
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+        padding-top: 10%;
+        padding-bottom: 1%;
+    }
+
+    .fortunauvod {
+        color: midnightblue;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1em;
+        width: auto;
+        margin: 0% 3%;
+    }
+
+    div.uljaimasti {
+        height: auto;
+        margin-bottom: 4%;
+        width: 100%;
+        margin-bottom: 1%;
+    }
+
+    div.uljaimasti div {
+        width: 100%;
+    }
+
+    .naslovuljaimasti {
+        font-size: 1.1em;
+        height: auto
+    }
+
+    .uljaimasti section.mobile {
+        margin: 0%;
+        background: #EDEEF1;
+    }
+
+    div.uljaimasti img {
+        width: 99%;
+    }
+
+    div.uljaimasti p {
+        color: midnightblue;
+        font-size: 1em;
+        width: 96%;
+        padding: 2%
+    }
+
+
+    div.uljaimasti span a {
+        font-size: 1em;
+    }
+
+
+    .naslovalati {
+        font-size: 1.1em;
+        height: auto;
+        margin-top: %;
+    }
+
+    img.slikaalati {
+        display: inline-block;
+        margin: 0 auto;
+        width: 49%;
+    }
+
+    #dveslikealatilink {
+        background: firebrick;
+        color: white;
+        text-align: center;
+        width: 98%;
+        height: 26px;
+        padding: 5px;
+        margin: auto;
+        display: flex;
+    }
+
+    #dveslikealatilink .link1 {
+        font-size: 1em;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-top: 1%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    #dveslikealatilink .link2 {
+        font-size: 1em;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-top: 1%;
+        margin-right: 10%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .naslovsrafovskaroba {
+        font-size: 1.1em;
+        height: auto;
+    }
+
+    .srafovskaroba img {
+        width: 99%;
+        height: 50%;
+    }
+
+    div.srafovskaroba {
+        height: auto;
+        margin-bottom: 4%;
+        width: 100%;
+    }
+
+    div.srafovskaroba div {
+        width: 100%;
+    }
+
+    .srafovskaroba section.mobile {
+        top: 0px;
+        margin: 1%;
+        width: auto;
+        background: #EDEEF1;
+        font-size: 0.9em;
+    }
+
+    div.srafovskaroba p {
+        color: midnightblue;
+        width: 98%;
+        position: relative;
+    }
+
+    .srafovskaroba a {
+        font-size: 1.1em;
+        display: block;
+        margin: 0 auto;
+        width: max-content;
+        top: -10px;
+        position: relative;
+    }
+
+    .naslovnegaruku {
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    .naslovlepila {
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    h2.naslovnegaruku,
+    h2.naslovlepila {
+        width: 47%
+    }
+
+    #naslovnegarukuilepila {
+        font-size: 0.8em;
+        height: auto;
+        width: auto;
+        text-align: center;
+
+    }
+
+    #negarukuilepila img {
+        display: inline-block;
+        margin: 5px auto;
+        width: 49%;
+    }
+
+    #paragrafnegarukuilepila {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    #paragrafnegarukuilepila,
+    p.negaruku,
+    p.lepila {
+        width: 100%;
+        font-size: 1em;
+        text-align: left;
+        left: 0;
+        right: 0;
+    }
+
+    #paragrafnegarukuilepila,
+    p.negaruku,
+    p.lepila:not(:first-child) {
+        text-align: justify;
+    }
+
+    #paragrafnegarukuilepila a.linklepila,
+    #paragrafnegarukuilepila a.linknegaruku {
+        font-size: 1em;
+        width: max-content%;
+        height: auto;
+        margin: 7px auto;
+        text-align: center;
+    }
+
+    .naslovlampe {
+        font-size: 1.1em;
+        height: auto;
+        margin-top: 3%;
+    }
+
+    .lampe a {
+        width: 30%;
+        font-size: 1em;
+    }
+
+    .lampe .mobile {
+        width: 100%;
+    }
+
+    .lampe .mobile p {
+        font-size: 1em;
+        margin: 0% 2%;
+        padding: 10px 0px 0px 0px;
+        text-align: justify;
+    }
+
+    #linklampe a.linklampe {
+        width: max-content;
+        font-size: 1em;
+    }
+
+    #footerinfo {
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 0;
+        width: 90%;
+    }
+
+    .footerinfo li {
+        list-style: none;
+        float: left;
+        width: 32%;
+        margin-right: 1%;
+        font-size: 0.7em;
+        margin-bottom: 0%;
+
+    }
+
+    .footerinfo li:before {
+        content: "\2714";
+        font-size: 1.8em;
+        color: firebrick;
+    }
+
+    hr.footerhr2 {
+        margin-top: 0;
+    }
+
+    div .endline {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #endline table p {
+        font-size: 0.5em;
+    }
+}

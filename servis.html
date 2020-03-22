@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en, sr">
+
+<head>
+    <link rel="stylesheet" href="styleservis.css">
+    <!--    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>-->
+    <!--    <script src="servis.js"></script>-->
+    <meta charset="UTF-8, WINDOWS-1250">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fortuna International doo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav>
+        <ul class="glavnimeni" id="klikmeni">
+           <li><a class="btn btn1" href="index.html">Početna </a></li>
+            <li><a class="btn btn1" href="onama.html">O nama</a></li>
+            <li><a class="btn btn1" href="prodajniprogram.html">Prodajni program</a></li>
+            <li><a class="btn btn1" href="servis.html">Servis</a></li>
+            <li class="glavnimeni-desno"><a class="btn btn1" href="kontakt.html">Kontakt</a></li>
+            <li class="glavnimeni-desno"><a class="btn btn1" href="kakodonas.html">Kako do nas</a></li>
+            <li class="mobilnimeni"><a class="btn btn1" href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container" id="sekcija1">
+
+        <h2>Servis i usluge</h2>
+
+        <p>Ukoliko imate pokvareni aparat ili proizvod sa greškom, možete ga kod nas stručno popraviti. <br><br>
+
+            Mi garantujemo našim kupcima brzu i besplatnu popravku do isteka garancije a i posle. <br><br> U zavisnosti
+            i od vrste kvara, popravku će preuzeti servisni tehničar naše kompanije
+            ili proizvođač proizvoda. <br>
+            <br>
+            Preuzimanje pokvarenog i dostavu popravljenog aparata, u garantnom roku, preuzima Fortuna-International doo.
+            <br>
+            Celi proces je budno praćen od strane naše servisne službe.</p>
+
+    </div>
+
+    <div class="kontaktdiv">
+
+        <h1>Reklamacioni fomular</h1>
+
+        <div class="border"></div>
+
+        <form class="kontaktforma" method="POST" action="https://formspree.io/office@fortuna-int.rs">
+
+            <input type="text" class="kontakttekst" placeholder="Naziv kupca" name="Naziv kupca" autofocus required>
+            <input type="text" class="kontakttekst" placeholder="Adresa" name="Adresa" required>
+            <input type="text" class="kontakttekst" placeholder="Mesto" name="Mesto" required>
+            <input type="text" class="kontakttekst" placeholder="Kontakt osoba" name="Kontakt osoba" required>
+            <input type="text" class="kontakttekst" placeholder="Kontakt telefon" name="Kontakt telefon" required>
+            <input type="email" class="kontakttekst" placeholder="E-mail" name="email" required>
+            <input type="text" class="kontakttekst" placeholder="PIB" name="PIB">
+            <input type="text" class="kontakttekst" placeholder="Šifra artikla" name="Šifra artikla">
+            <input type="text" class="kontakttekst" placeholder="Serijski broj" name="Serijski broj">
+            <input type="text" class="kontakttekst" placeholder="Broj računa" name="Broj računa">
+            <textarea class="kontakttekst" placeholder="Opis kvara" name="Opis kvara" required></textarea>
+            <input type="submit" class="kontaktdugme" value="Send">
+        </form>
+
+        <img src="img/servis.jpeg" alt="">
+
+    </div>
+
+    <div class="status">
+
+    </div>
+
+    <hr class="footerhr2">
+
+    <div id="endline">
+        <table>
+            <tr>
+                <td>
+                    <p class="endlinefortuna">
+                        © 2020 Fortuna International doo
+                    </p>
+                </td>
+                <td>
+                    <p class="endlinecodedby">
+                        Coded by Ponjević Goran
+                    </p>
+                </td>
+                <td>
+                    <p class="endlineemail">
+                        Email: office@fortuna-int.rs
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("klikmeni");
+            if (x.className === "glavnimeni") {
+                x.className += " aktivacija";
+            } else {
+                x.className = "glavnimeni";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

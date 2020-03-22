@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en, sr">
+
+<head>
+    <link rel="stylesheet" href="stylekontakt.css">
+    <meta charset="UTF-8, WINDOWS-1250">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fortuna International doo</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="glavnimeni" id="klikmeni">
+           <li><a class="btn btn1" href="index.html">Početna </a></li>
+            <li><a class="btn btn1" href="onama.html">O nama</a></li>
+            <li><a class="btn btn1" href="prodajniprogram.html">Prodajni program</a></li>
+            <li><a class="btn btn1" href="servis.html">Servis</a></li>
+            <li class="glavnimeni-desno"><a class="btn btn1" href="kontakt.html">Kontakt</a></li>
+            <li class="glavnimeni-desno"><a class="btn btn1" href="kakodonas.html">Kako do nas</a></li>
+            <li class="mobilnimeni"><a class="btn btn1" href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container" id="sekcija1">
+
+        <div class="kontaktdiv">
+
+            <h1>Kontakt</h1>
+
+            <div class="border"></div>
+
+            <p class="fortunainfo">
+                Fortuna-International doo <br>
+                Batajnički Drum 261A <br>
+                11080 Beograd-Zemun <br>
+                Srbija <br>
+                <br><br>
+                PIB: 101831697
+                <br>
+                Matični br. 17242911 <br>
+                <br>
+                Žiro-račun: 155-22551-63
+                <br> <br>
+                Telefon: +381 (0)11 3770 400 <br>
+                Fax: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+381 (0)11 3770 410
+                <br>
+                <a href="mailto:office@fortuna-int.rs">E-mail: office@fortuna-int.rs</a>
+            </p>
+
+
+
+            <div class="border"></div>
+
+            <form class="kontaktforma" method="POST" action="https://formspree.io/office@fortuna-int.rs">
+
+                <input type="text" class="kontakttekst" placeholder="Vaše ime" name="Vaše ime" tabindex="1" required
+                    autofocus>
+                <input type="text" class="kontakttekst" placeholder="Adresa" name="Adresa" tabindex="2" required>
+                <input type="text" class="kontakttekst" placeholder="Mesto" name="Mesto" tabindex="3" required>
+                <input type="text" class="kontakttekst" placeholder="Kontakt telefon" name="Kontakt telefon"
+                    tabindex="4" required>
+                <input type="email" class="kontakttekst" placeholder="E-mail" name="E'mail" tabindex="5" required>
+                <textarea class="kontakttekst" placeholder="Vaše pitanje" name="Vaše pitanje" tabindex="6"
+                    required></textarea>
+                <input type="submit" class="kontaktdugme" value="Send" tabindex="7">
+            </form>
+
+            <img src="img/kontakt.jpg" alt="">
+
+            <img class="imgmobile" src="img/kontakt.jpg" alt="">
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <hr class="footerhr2">
+
+    <div id="endline">
+        <table>
+            <tr>
+                <td>
+                    <p class="endlinefortuna">
+                        © 2020 Fortuna International doo
+                    </p>
+                </td>
+                <td>
+                    <p class="endlinecodedby">
+                        Coded by Ponjević Goran
+                    </p>
+                </td>
+                <td>
+                    <p class="endlineemail">
+                        Email: office@fortuna-int.rs
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("klikmeni");
+            if (x.className === "glavnimeni") {
+                x.className += " aktivacija";
+            } else {
+                x.className = "glavnimeni";
+            }
+        }
+    </script>
+</body>
+
+</html>

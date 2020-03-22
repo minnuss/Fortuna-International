@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en, sr">
+
+<head>
+    <link rel="stylesheet" href="stylekakodonas.css">
+    <meta charset="UTF-8, WINDOWS-1250">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fortuna International doo</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="glavnimeni" id="klikmeni">
+            <li><a class="btn btn1" href="index.html">Početna </a></li>
+            <li><a class="btn btn1" href="onama.html">O nama</a></li>
+            <li><a class="btn btn1" href="prodajniprogram.html">Prodajni program</a></li>
+            <li><a class="btn btn1" href="servis.html">Servis</a></li>
+            <li class="glavnimeni-desno"><a class="btn btn1" href="kontakt.html">Kontakt</a></li>
+            <li class="glavnimeni-desno"><a class="btn btn1" href="kakodonas.html">Kako do nas</a></li>
+            <li class="mobilnimeni"><a class="btn btn1" href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container" id="sekcija1">
+
+        <h2>Kako do nas ?</h2>
+
+        <p>Fortuna International doo se nalazi u Beograd-Zemun, Batajnički Drum 261a. <br>
+        </p>
+
+        <p class="googlemapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.0926680343837!2d20.322894715915844!3d44.88076307909835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a5ad9f83eebd9%3A0x625a661ab4fd5143!2sFortuna%20International!5e0!3m2!1sen!2srs!4v1584877098378!5m2!1sen!2srs" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </p>
+
+    </div>
+
+    <div class="mobile">
+        <p class="googlemapamala">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.0926680343837!2d20.322894715915844!3d44.88076307909835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a5ad9f83eebd9%3A0x625a661ab4fd5143!2sFortuna%20International!5e0!3m2!1sen!2srs!4v1584877098378!5m2!1sen!2srs" width="360" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </p>
+    </div>
+
+
+
+
+
+    <hr class="footerhr2">
+
+    <div id="endline">
+        <table>
+            <tr>
+                <td>
+                    <p class="endlinefortuna">
+                        © 2020 Fortuna International doo
+                    </p>
+                </td>
+                <td>
+                    <p class="endlinecodedby">
+                        Coded by Ponjević Goran
+                    </p>
+                </td>
+                <td>
+                    <p class="endlineemail">
+                        Email: office@fortuna-int.rs
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("klikmeni");
+            if (x.className === "glavnimeni") {
+                x.className += " aktivacija";
+            } else {
+                x.className = "glavnimeni";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

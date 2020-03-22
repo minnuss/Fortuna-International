@@ -1,0 +1,302 @@
+/************ DEFAULTS **********/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "sans-serif", "Verdana", "Arial";
+}
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+/************ Glavni Meni **********/
+
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 0.3% 0;
+    position: fixed;
+    background: #1E4D8C;
+    z-index: 9999;
+}
+
+.glavnimeni {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.glavnimeni li {
+    list-style: none;
+    margin: 5px;
+    width: max-content;
+    display: inline-block;
+    float: left;
+}
+
+.btn {
+    position: relative;
+    color: white;
+    font-size: 1.em;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #1E4D8C;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px;
+    transition: 1s all ease;
+}
+
+.btn::before {
+    background: #E8E8E8;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.btn1:hover {
+    color: #1E4D8C;
+}
+
+.btn1::before {
+    width: 0%;
+    height: 100%;
+}
+
+.btn1:hover::before {
+    width: 100%;
+}
+
+li.glavnimeni-desno {
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+ul.glavnimeni li.mobilnimeni {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    background-color: #e8e8e8;
+}
+
+/************* Styles **************/
+element.style {
+    width: auto;
+}
+
+.fortunalogo {
+    display: block;
+    margin: 3% auto;
+    width: 25%;
+}
+
+.headerhr {
+    overflow: hidden;
+    border: 5px solid #EAEAED;
+    margin: 10px auto;
+    position: relative;
+    display: block;
+    width: auto;
+}
+
+.container ul li {
+    list-style: square;
+    margin-left: 50px;
+    font-style: italic;
+}
+
+.uvod {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+    color: #1E4D8C;
+}
+
+.uvod2 {
+    margin: 1% auto 1%;
+    width: 60%;
+    font-size: 1.1em;
+    color: #1E4D8C;
+    text-align: center
+}
+
+table {
+    border: 1px dotted silver;
+    margin: 0% 5% 1% 3%;
+    border-spacing: 20px;
+    width: 95%;
+    color: #1E4D8C;
+}
+
+table tr td p.fortunafirma {
+    width: 100%;
+    float: right;
+}
+
+.zakljucak {
+    display: block;
+    margin: 0 5% 1% 5%;
+    color: #1E4D8C;
+    text-align: justify;
+}
+
+.footerhr {
+    overflow: hidden;
+    border: 5px solid #EAEAED;
+    margin: 10px auto;
+    position: relative;
+    display: block;
+    width: auto;
+}
+
+.fortunaukratko {
+    font-size: 1em;
+    font-style: oblique;
+    margin: 1% auto;
+    display: block;
+    border: 1px dotted silver;
+    width: max-content;
+    overflow: hidden;
+    clear: both;
+    color: #1E4D8C;
+}
+
+hr.footerhr2 {
+    border: 5px solid #EAEAED;
+    margin: 10px auto;
+    position: relative;
+    display: block;
+}
+
+#endline {
+    width: 100%;
+    background-color: white;
+}
+
+#endline table {
+    width: 70%;
+    margin: 0 auto;
+    border: none;
+}
+
+#endline table p {
+    font-size: 0.7em;
+    text-align: center;
+}
+
+
+
+/*********************** Mobilna verzija **********************/
+
+
+@media screen and (max-width: 880px) {
+    ul.glavnimeni li:not(:nth-child(1)) {
+        display: none;
+    }
+
+     nav {
+        padding: 4px;
+    }
+
+    ul.glavnimeni li.mobilnimeni {
+        display: block;
+        float: right;
+        margin: 5px;
+    }
+
+    ul.glavnimeni.aktivacija li.mobilnimeni {
+        position: absolute;
+        top: 0;
+        width: max-content;
+        right: 0;
+    }
+
+    /*ul.glavnimeni.aktivacija {
+        position: relative;
+    }*/
+
+    ul.glavnimeni.aktivacija li {
+        display: block;
+        float: none;
+        margin: 0;
+    }
+
+    ul.glavnimeni.aktivacija li a {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 7px;
+        margin: 0 0 0 10px;
+
+    }
+
+    .fortunalogo {
+        display: block;
+        margin: 8% auto 1%;
+        width: 55%;
+    }
+
+    .uvod {
+        font-size: 1em;
+        margin-bottom: -2%;
+    }
+
+    .uvod2 {
+        margin-top: 2%;
+        font-size: 1em;
+        margin-bottom: -2%;
+        width: 85%;
+    }
+
+    table {
+        margin: 0 auto;
+    }
+
+    .razrada {
+        font-size: 0.9em;
+    }
+
+    table img {
+        display: none;
+    }
+
+    .zakljucak {
+        font-size: 1em;
+    }
+
+    .fortunaukratko {
+        margin: 0;
+        left: 5px;
+        font-size: 0.8em;
+        margin: 1% auto;
+        border: 1px dotted silver;
+        width: 95%;
+    }
+
+    div .endline {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #endline table p {
+        font-size: 0.5em;
+    }

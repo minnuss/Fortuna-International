@@ -1,0 +1,288 @@
+/************ DEFAULTS **********/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "sans-serif", "Verdana", "Arial";
+}
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+/************ Glavni Meni **********/
+
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 0.3% 0;
+    position: fixed;
+    background: #1E4D8C;
+    z-index: 9999;
+}
+
+.glavnimeni {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.glavnimeni li {
+    list-style: none;
+    margin: 5px;
+    width: max-content;
+    display: inline-block;
+    float: left;
+}
+
+.btn {
+    position: relative;
+    color: white;
+    font-size: 1.em;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #1E4D8C;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px;
+    transition: 1s all ease;
+}
+
+.btn::before {
+    background: #E8E8E8;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.btn1:hover {
+    color: #1E4D8C;
+}
+
+.btn1::before {
+    width: 0%;
+    height: 100%;
+}
+
+.btn1:hover::before {
+    width: 100%;
+}
+
+li.glavnimeni-desno {
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+
+ul.glavnimeni li.mobilnimeni {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    background-color: #e8e8e8;
+}
+
+/************* Styles **************/
+
+
+.fortunainfo {
+    text-align: center;
+    color: #1E4D8C;
+    margin-bottom: 2%;
+}
+
+
+.kontaktdiv {
+    background-color: #e8e8e8;
+    margin: 2% 0;
+}
+
+.fortunainfo {}
+
+.kontaktdiv h1 {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+    color: #1E4D8C;
+}
+
+.border {
+    width: 150px;
+    height: 5px;
+    background: #1E4D8C;
+    margin: 20px auto;
+}
+
+.kontaktforma {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.kontakttekst {
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #1E4D8C;
+    padding: 15px 25px;
+    outline: none;
+    color: white;
+    transition: 0.5s;
+}
+
+::placeholder {
+    color: white;
+    font-size: 1.1em;
+}
+
+.kontakttekst:focus {
+    box-shadow: 0 0 10px 4px #0984e3;
+}
+
+textarea.kontakttekst {
+    resize: none;
+    height: 120px;
+    font-size: 1.1em;
+    display: block;
+    box-sizing: padding-box;
+    overflow: hidden;
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: 2px 2px 8px rgba(black, .3);
+    border: 0;
+}
+
+.kontaktdugme {
+    font-size: 1.1em;
+    float: right;
+    border: 0;
+    background: #1E4D8C;
+    color: white;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.kontaktdugme:hover {
+    -webkit-transition: all .5s ease-in-out;
+    background: #0984e3;
+}
+
+.kontaktdiv img {
+    display: block;
+    margin: 2% auto 0%;
+    width: 100%;
+}
+
+div .imgmobile {
+    display: none;
+}
+
+
+
+
+hr.footerhr2 {
+    border: 5px solid #EAEAED;
+    margin: 10px auto;
+    position: relative;
+    display: block;
+}
+
+
+#endline {
+    width: 100%;
+    background-color: white;
+}
+
+#endline table {
+    width: 70%;
+    margin: 0 auto;
+    border: none;
+}
+
+#endline table p {
+    font-size: 0.7em;
+    text-align: center;
+}
+
+
+
+/*********************** Mobilna verzija **********************/
+
+
+@media screen and (max-width: 880px) {
+    ul.glavnimeni li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    nav {
+        padding: 4px;
+    }
+
+    ul.glavnimeni li.mobilnimeni {
+        display: block;
+        float: right;
+        margin: 5px;
+    }
+
+    ul.glavnimeni.aktivacija li.mobilnimeni {
+        position: absolute;
+        top: 0;
+        width: max-content;
+        right: 0;
+    }
+
+    /*ul.glavnimeni.aktivacija {
+        position: relative;
+    }*/
+
+    ul.glavnimeni.aktivacija li {
+        display: block;
+        float: none;
+        margin: 0;
+    }
+
+    ul.glavnimeni.aktivacija li a {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 7px;
+        margin: 0 0 0 10px;
+
+    }
+
+    .kontaktdiv {
+        margin-top: 12%;
+    }
+
+
+
+    div .endline {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #endline table p {
+        font-size: 0.5em;
+    }
